@@ -8,7 +8,6 @@
     <% } %>
     <div class="article-meta">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-      <%- partial('post/category') %>
     </div>
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
@@ -21,17 +20,17 @@
       <% } else { %>
         <%- post.content %>
       <% } %>
-
-      <% if (page.path === "tags/index.html"){ %>
-        <%- list_tags() %>
-      <% } %>
-        
     </div>
+  </div>
+  <div class="article-end">
+    <%- partial('post/tag') %>
   </div>
   <% if (!index){ %>
     <%- partial('post/nav') %>
   <% } %>
 </article>
+
+<div style="width:100%;border-bottom:1px dotted #495057"></div>
 
 <% if (!index && post.comments && config.disqus_shortname && page.path !== "tags/index.html"){ %>
 <section id="comments">

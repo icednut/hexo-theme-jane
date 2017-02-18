@@ -10,13 +10,6 @@
 .archive-year
   @extend $block-caption
 
-.archives
-  column-gap: 10px
-  @media mq-tablet
-    column-count: 2
-  @media mq-normal
-    column-count: 3
-
 .archive-article
   avoid-column-break()
 
@@ -28,7 +21,7 @@
 .archive-article-title
   text-decoration: none
   font-weight: bold
-  color: color-default
+  color: #0b7285
   transition: color 0.2s
   line-height: line-height
   &:hover
@@ -44,6 +37,11 @@
   line-height: 1em
   margin-bottom: 0.5em
   display: block
+
+.archive-element
+  padding: 10px
+  &:hover
+    background-color: #f1f3f5
 
 #page-nav
   clearfix()

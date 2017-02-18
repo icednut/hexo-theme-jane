@@ -1,6 +1,5 @@
 .article
   margin: block-margin 0
-  border-bottom: 1px dashed #d9d9d9
   text-align: justify
   
 .article-inner
@@ -13,6 +12,8 @@
 .article-date
   @extend $block-caption
   float: left
+  line-height: 1.5em
+  font-size: 1em
 
 .article-category
   float: left
@@ -27,18 +28,38 @@
   @extend $block-caption
   margin: 0 5px 0 0
 
+.article-tag
+  float: left
+  margin: 0 0 0 10px
+  color: #ccc
+  line-height: 1.5em
+  font-size: 1em
+
+.article-tag-link
+  @extend $block-caption
+  color: #0b7285
+  margin: 0 5px 0 0
+  border-bottom: 1px dotted color-grey
+  &:before
+    content: "#"
+
 .article-header
-  padding: article-padding 0 
+  padding: article-padding 0 7px 0
 
 .article-title
   text-decoration: none
   font-size: 1.8em
   font-weight: bold
-  color: color-default
+  color: #0b7285
   line-height: line-height-title
   transition: color 0.2s
   a&:hover
     color: color-link
+
+.article-end
+  padding: 20px 10px
+  height: 1.5em
+  background-color: #f8f9fa
 
 .article-entry
   @extend $base-style
@@ -46,6 +67,8 @@
   color: color-default
   padding: 0
   padding-bottom: 20px
+  margin-top: 20px;
+  border-top: 1px solid #e1e1e1
   p, table
     line-height: line-height
     margin: line-height 0

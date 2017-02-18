@@ -3,7 +3,7 @@ menu:
   Home: /
   Archives: /archives
   Tag: /tags
-  Github: https://github.com/
+  Github: https://github.com/icednut
 rss: /atom.xml
 
 # Content
@@ -11,5 +11,5 @@ excerpt_link: More...
 fancybox: true
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-91631073-1
 favicon: /favicon.png
